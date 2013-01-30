@@ -1,6 +1,6 @@
 // Run on Raspberry PI
 // Requires wiringPI
-// Writes out recieved data in Hex
+// Writes out raw bytes received as data in Hex
 // Lots of bugs still exist and code is very smelly!
 
 #include <stdio.h>
