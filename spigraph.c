@@ -58,7 +58,12 @@ int main(void){
 	
 	ftime(&stoptime);
 	
-	//copy buffer to data removing 0x7E symbols
+	// copy buffer to data dealing with escape sequences
+	// 0x7E in data stream are packers for when there is no data to send - ignore them
+	// 0x7D 0x5E is used as escape to represent 0x7E
+	// 0x7D 0x5D is used to represent 0x7D
+	// 0x7D not followed by 0x5E or 0x5D represents 0x7D and no special action taken
+
 	int k=0;
 	for(j=0; j<4096; j++)
 	{
@@ -88,7 +93,7 @@ int main(void){
 	//Uncomment for DEBUG:
 	//	printf("%d, 0x%X\n", i, data[i]);
 	//	printf("%d, 0x%X     ", i+1, data[i+1]);	
-		printf("%d,%d\n", i, data[i]*256+data[i+1]);
+		printf( "%d,%d\n", i, data[i]*256  +  data[i+1] );
 	}
 	
 	return (0);
