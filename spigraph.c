@@ -5,6 +5,8 @@
 // This program can filter 7E Escapes sequences produced by the PIC code
 // It assembles 2 byte packets into a complete value from the A/D on the PIC
 // 
+// TODO:
+// This code needs modified to ensure it is working on the correct data boundary as data comes from the PIC
 
 #include <stdio.h>
 #include <stdint.h>
