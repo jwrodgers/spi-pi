@@ -8,8 +8,9 @@
 
 
 int main(void){
-
-  
-
-
+    int i;
+    for(i=0; i<samples; i++){
+        printf("%d", i);
+    }
+    return(EXIT_SUCCESS);
 }
