@@ -2,10 +2,13 @@
 #include <stdlib.h>
 #include <math.h>
 
-#define samples 10000
-#define step    0.001
+#define samples         10000
 
+#define mainsfrequency  50      //Frequency of the mains in Hz
+#define samplerate      12800   //Rate that samples are made
+#define PI              3.141   //Needs more decimal places
 
+#define step            2*PI*50/12800
 
 int main(void){
     int i;
