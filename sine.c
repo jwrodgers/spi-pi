@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <math.h>
 
-#define samples 100
+#define samples 10000
 #define step    0.001
 
 
@@ -14,7 +14,7 @@ int main(void){
     for(i=0; i<samples; i++){
         y=sin(x);
         x=x+step;
-        printf("%d %f\n", i, y);
+        printf("%d,%f\n", i, y);
     }
     return(EXIT_SUCCESS);
 }
