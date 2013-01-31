@@ -9,8 +9,12 @@
 
 int main(void){
     int i;
+    float x,y;
+    
     for(i=0; i<samples; i++){
-        printf("%d", i);
+        y=sin(x);
+        x=x+step;
+        printf("%d %f\n", i, y);
     }
     return(EXIT_SUCCESS);
 }
