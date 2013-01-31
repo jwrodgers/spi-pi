@@ -6,7 +6,7 @@
 
 #define mainsfrequency  50      //Frequency of the mains in Hz
 #define samplerate      12800   //Rate that samples are made
-#define PI              3.141   //Needs more decimal places
+#define PI              3.141592653
 
 #define step            2*PI*50/12800
 
